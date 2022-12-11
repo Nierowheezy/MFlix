@@ -1,8 +1,8 @@
-import React from 'react'
-import { Image } from '@chakra-ui/image'
-import { Box, Text, Link } from '@chakra-ui/layout'
-import { Link as RouterLink } from 'react-router-dom'
 import { useDisclosure } from '@chakra-ui/hooks'
+import { Image } from '@chakra-ui/image'
+import { Box, Text } from '@chakra-ui/layout'
+import React from 'react'
+import { Link as RouterLink } from 'react-router-dom'
 
 import PosterModal from './PosterModal'
 
