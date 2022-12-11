@@ -22,6 +22,8 @@ function Home({ movies, fetchMovies, page, nextPage }) {
   React.useEffect(() => {
     window.addEventListener('scroll', handleScroll)
     fetchMovies(title)
+
+    // eslint-disable-next-line
   }, [page])
 
   return (

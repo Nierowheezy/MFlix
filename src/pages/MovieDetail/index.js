@@ -1,8 +1,8 @@
-import React from 'react'
-import axios from 'axios'
-import { useParams } from 'react-router-dom'
-import { Box, Text, HStack, VStack, Square } from '@chakra-ui/layout'
 import { Image } from '@chakra-ui/image'
+import { Box, HStack, Square, Text, VStack } from '@chakra-ui/layout'
+import axios from 'axios'
+import React from 'react'
+import { useParams } from 'react-router-dom'
 
 import PageContainer from '../../components/PageContainer'
 
@@ -14,6 +14,7 @@ export default function MovieDetail() {
     axios.get(`https://www.omdbapi.com/?i=${id}&apikey=cadc1a65`).then(res => {
       setMovie(res.data)
     })
+    // eslint-disable-next-line
   }, [])
 
   return (
